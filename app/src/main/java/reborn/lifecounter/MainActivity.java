@@ -48,6 +48,41 @@ public class MainActivity extends AppCompatActivity {
                 atualizaPlacar();
             }
         });
+
+
+        Button yPlus5 = (Button) findViewById(R.id.yourPlus5);
+        yPlus5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                yourLife = yourLife + 5;
+                atualizaPlacar();
+            }
+        });
+        Button yLess5 = (Button) findViewById(R.id.yourLess5);
+        yLess5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                yourLife = yourLife - 5;
+                atualizaPlacar();
+            }
+        });
+        Button oPluss5 = (Button) findViewById(R.id.opponentPlus5);
+        oPluss5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opponentLife =opponentLife +5 ;
+                atualizaPlacar();
+            }
+        });
+        Button oLess5 = (Button) findViewById(R.id.opponentLess5);
+        oLess5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                opponentLife =opponentLife -5 ;
+                atualizaPlacar();
+            }
+        });
+
     }
 
     public void startGame(){
